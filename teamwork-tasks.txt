@@ -9,21 +9,11 @@ $ git checkout skel-lesion-1
 $ git pull
 $ git checkout -b huy-team-l1-f1 # với huy là tên của leader, 1 là lession đầu tiên, f1 là tính năng 1
 
-2. teamlead tạo 1 file: team-info.txt và nhập thông tin với format sau:
-
-------------------------------------------------
-basic info:
-team lead: tên teamlead
-team member name: name1, name2, name3, xxxxx
-------------------------------------------------
-team detail:
-
-+ [you-name] - sở thích - số điện thoại 
+2. teamlead tạo 1 file: data/team-info.csv với format như data/member-sample.csv
+và tự nhập thông tin mình.
 
 
-------------------------------------------------
-
-4. commit với message: "tạo file team-info.txt & nhập thông tin team lead "
+4. commit với message: "tạo file team-info.csv & nhập thông tin team lead "
 
 5. đẩy lên server và yêu cầu người khác trong team nhập thông tin 
 (*)  chú ý: không chơi hỏi bằng miệng rồi người khác nhập hộ, phải tự mình nhập
@@ -32,11 +22,7 @@ team detail:
 
 YÊU CẦU KẾT QUẢ:
 + tất cả các máy thành viên đều phải ở cùng 1 branch, ví dụ: huy-team-l1-f1
-+ tất cả các máy đêu có file: team-info.txt, trong đó có đầy đủ thông tin thành viên của nhóm.
-
-
-
-
++ tất cả các máy đêu có file: team-info.csv, trong đó có đầy đủ thông tin thành viên của nhóm.
 
 
 

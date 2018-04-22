@@ -1,7 +1,9 @@
 
 [Phần 1 - Teamwork ngon]
 
-Kịch bản: Cần tạo 1 file chứa tất cả thông tin thành viên trong 1 nhóm, mỗi thành viên tự điền thông tin mình vào rồi commit.
+Kịch bản: Cần tạo 1 file chứa tất cả thông tin thành viên trong 1 nhóm, mỗi thành viên tự điền thông tin mình vào rồi commit và Deploy.
+Ví dụ kết quả: https://ftech-ed-fsehqrldtl.now.sh/
+
 
 0. quay sang hỏi bạn bên cạnh, xem có muốn join team không, bầu ra teamlead
 1. team lead pull branch "skel-lesion-1" về, và tạo branch mới theo quy định, ví dụ:
@@ -9,11 +11,11 @@ $ git checkout skel-lesion-1
 $ git pull
 $ git checkout -b huy-team-l1-f1 # với huy là tên của leader, 1 là lession đầu tiên, f1 là tính năng 1
 
-2. teamlead tạo 1 file: data/team-info.csv với format như data/member-sample.csv
+2. teamlead tạo 1 file: data/[your-teamname]-team-info.js với format như data/dzung-team-info.js
 và tự nhập thông tin mình.
 
 
-4. commit với message: "tạo file team-info.csv & nhập thông tin team lead "
+4. commit với message: "tạo file data/[your-teamname]-team-info.js & nhập thông tin team lead "
 
 5. đẩy lên server và yêu cầu người khác trong team nhập thông tin 
 (*)  chú ý: không chơi hỏi bằng miệng rồi người khác nhập hộ, phải tự mình nhập
@@ -22,11 +24,13 @@ và tự nhập thông tin mình.
 
 YÊU CẦU KẾT QUẢ:
 + tất cả các máy thành viên đều phải ở cùng 1 branch, ví dụ: huy-team-l1-f1
-+ tất cả các máy đêu có file: team-info.csv, trong đó có đầy đủ thông tin thành viên của nhóm.
++ tất cả các máy đêu có file: data/[your-teamname]-team-info.js, trong đó có đầy đủ thông tin thành viên của nhóm.
 
 
 
-
+[DEPLOY]:
+$ cd project-name
+$ now # sau khi xác thực thông tin, now sẽ tự động deploy lên server.
 
 
 
